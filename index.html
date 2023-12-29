@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+
+    <title>Happy New Year!</title>
+    <style>
+        body {
+            font-family: 'Rowdies', sans-serif;
+            background-color: #000;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #ecf0f1;
+        }
+
+        .container {
+            text-align: center;
+            width: 80vw;
+        }
+
+        .greeting {
+            color: #e74c3c;
+            font-size: 36px;
+            padding: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-top: 10px;
+            font-family: 'Saira Semi Condensed', sans-serif;
+            padding: 20px;
+        }
+
+        @keyframes flip {
+            0%, 100% { transform: rotateY(0); }
+            50% { transform: rotateY(180deg); }
+        }
+
+        #mes {
+          text-decoration: none;
+          color: #fff;
+        }
+
+        #gre {
+          text-decoration: none;
+          color: #e74c3c;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <script>
+            const userName = prompt("Your beautiful name please.");
+            let greeting;
+
+            if (userName) {
+                const lowerCaseName = userName.toLowerCase();
+                   if (lowerCaseName === 'nhggj6667hgh') {
+                      greeting = 'invalid!';
+                } else {
+                    greeting = `Happy New Year, ${userName}!`;
+                }
+            } else {
+                greeting = 'Happy New Year!';
+            }
+
+            document.write(`<br><br><br><h1 class="greeting"><a id="gre" href="https://instagram.com/charle_404">${greeting}</a></h1>`);
+        </script>
+
+        <a id="mes" href="https://instagram.com/jishnu._.h"><p class="message">Wishing you a super-duper <font color="lightgreen">Happy New Year!</font> May your days be filled with smiles, laughter, and lots of good vibes. Here's to new adventures, exciting discoveries, and plenty of joy-filled moments. May your heart be as light as confetti, and your days as bright as fireworks in the night sky. Cheers to a fantastic year ahead!</p></a>
+    </div>
+</body>
+</html>
